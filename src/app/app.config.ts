@@ -14,12 +14,16 @@ import { getMessaging, provideMessaging } from '@angular/fire/messaging';
 import { getPerformance, providePerformance } from '@angular/fire/performance';
 import { getStorage, provideStorage } from '@angular/fire/storage';
 import { getRemoteConfig, provideRemoteConfig } from '@angular/fire/remote-config';
-import { environment } from '../environments/environment';
+//import { DevEnvironment } from '../environments/environment.development';
+import { config } from '../environments/environment';
+import { _config } from '../environments/environment.CI';
 
 export const appConfig: ApplicationConfig = {
   providers: [
   provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideClientHydration(),
-  provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
+  provideFirebaseApp(() => {
+    return process.env["CI"] ? initializeApp(config.FIREBASE_SERVICE_ACCOUNT_REMTECH_PROJECT) : initializeApp(_config.NO_CONFIG)
+  }),
   provideAuth(() => getAuth()), provideAnalytics(() => getAnalytics()), ScreenTrackingService, UserTrackingService, 
   provideFirestore(() => getFirestore()), provideDatabase(() => getDatabase()),
   /*provideAppCheck(() => {
