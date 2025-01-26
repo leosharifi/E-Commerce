@@ -19,4 +19,3 @@ jobs:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_REMTECH_PROJECT }}
           projectId: remtech-project
-          process.env.CI: true
