@@ -15,12 +15,11 @@ import { getPerformance, providePerformance } from '@angular/fire/performance';
 import { getStorage, provideStorage } from '@angular/fire/storage';
 import { getRemoteConfig, provideRemoteConfig } from '@angular/fire/remote-config';
 //import { DevEnvironment } from '../environments/environment.development';
-import { _config } from '../environments/environment.CI';
 
 export const appConfig: ApplicationConfig = {
   providers: [
   provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideClientHydration(),
-  provideFirebaseApp(() =>  initializeApp(_config.NO_CONFIG)),
+  provideFirebaseApp(() =>  initializeApp()),
   provideAuth(() => getAuth()), provideAnalytics(() => getAnalytics()), ScreenTrackingService, UserTrackingService, 
   provideFirestore(() => getFirestore()), provideDatabase(() => getDatabase()),
   /*provideAppCheck(() => {
