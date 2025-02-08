@@ -1,4 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap.scss";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --headerBgcolor: #1e374f;
+  --textColor1: #fff;
+  --textColor2: #9a9da0;
+}
+html{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+  margin: 0;
+}

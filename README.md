@@ -26,8 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
 
-## Install bootstrap  --> Done
-## Install tailWind CSS --> Done
-## Install firebase SDK & dependencies --> Done
-## Install font awesome --> Done
-## Install angular material  --> Done
+### Dependecies Refs ###
+[fontawesome-style](https://docs.fontawesome.com/web/style/style-cheatsheet)
+[searchAPI](https://www.searchapi.io/google-lens)
+[text](https://publicapis.io/)
