@@ -14,7 +14,7 @@ import { getMessaging, Messaging, provideMessaging } from '@angular/fire/messagi
 import { getPerformance, providePerformance } from '@angular/fire/performance';
 import { getStorage, provideStorage } from '@angular/fire/storage';
 import { getRemoteConfig, provideRemoteConfig } from '@angular/fire/remote-config';
-import { DevEnvironment } from '../environments/environment.development';
+//import { DevEnvironment } from '../environments/environment.development';
 import { connectDataConnectEmulator, DataConnect, getDataConnect } from 'firebase/data-connect';
 //import { connectorConfig } from '../../dataconnect-generated/js/default-connector';
 
@@ -24,7 +24,7 @@ export const appConfig: ApplicationConfig = {
     provideFirebaseApp(() => {
       //const connector: DataConnect = getDataConnect(connectorConfig);
       //connectDataConnectEmulator(connector, 'localhost', 9390);
-      return initializeApp(DevEnvironment.firebaseConfig)
+      return initializeApp()
     }),
     provideAuth(() => getAuth()), provideAnalytics(() => getAnalytics()), ScreenTrackingService, UserTrackingService,
     provideFirestore(() => {
