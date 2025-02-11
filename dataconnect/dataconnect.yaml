@@ -1,12 +1,12 @@
 specVersion: "v1beta"
-serviceId: "E-Commerce"
+serviceId: "e-commerce"
 location: "us-central1"
 schema:
   source: "./schema"
   datasource:
     postgresql:
-      database: "fdcdb"
+      database: "remtech-project"
       cloudSql:
-        instanceId: "E-Commerce-fdc"
+        instanceId: "e-commerce"
       # schemaValidation: "COMPATIBLE"
 connectorDirs: ["./connector"]

@@ -1,0 +1,52 @@
+<header>
+  <fa-icon class="fa-xl" [icon]="home"></fa-icon>
+  <details true>
+    <summary>Navbar</summary>
+    <ul>
+        <li><a href="#">item 1</a></li>
+        <li><a href="#">item 2</a></li>
+        <li><a href="#">item 3</a></li>
+        <li><a href="#">item 4</a></li>
+    </ul>
+  </details>
+  <nav>
+    <ul>
+      <li><a href="#" class="current">Home</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+  <form id="search-form">
+    <div id="search-icon">
+      <fa-icon class="fa-xl" [icon]="magnifier"></fa-icon>
+      <!-- <svg
+        class="icon-svg"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      > 
+        <circle cx="11" cy="11" r="8"></circle>
+        <path d="M21 21l-4.3-4.3"></path>
+      </svg> -->
+    </div>
+    <input
+      id="search-input"
+      type="text"
+      spellcheck="false"
+      name="text"
+      placeholder="Search..."
+    />
+    <button id="clear-button" aria-label="Clear input button" type="reset">
+      <fa-icon class="fa-xl" [icon]=cancel></fa-icon>
+      <!-- <svg
+        class="icon-svg"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <path d="M18 6L6 18"></path>
+        <path d="M6 6l12 12"></path>
+      </svg> -->
+    </button>
+  </form>
+  <span class="signUpBtn">SignUp</span>
+</header>
