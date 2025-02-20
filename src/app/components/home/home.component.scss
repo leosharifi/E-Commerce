@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.singUpArea {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+}
+.leftSide {
+    background: url(https://img.freepik.com/premium-vector/abstract-background-technology-overlapping-waves-data-transmission-file-processing-system_111088-2665.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 100px 20px 0 50px;
+    color: white;
+    font-size: 20px;
+    font-family: "Fira Sans", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+p {
+    font-size: 25px;
+    font-weight: 400;
+}
+.rightSide {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 70px 0 0 0;
+    color: black;
+    flex-direction: column;
+}
+
+img {
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    background: white;
+}
+button {
+    padding: 10px 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.gitHubSignUp {
+    background: black;
+}
+.googleSignUp {
+    background: orangered;
+}
+.appleSignUp{
+    background: 
+}
