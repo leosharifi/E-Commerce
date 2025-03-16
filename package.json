@@ -4,14 +4,15 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 9020 --open",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
+    "build": "ng build --configuration production",
+    "watch": "ng build --watch --configuration production",
     "test": "ng test",
     "serve:ssr:e-commerce": "node dist/e-commerce/server/server.mjs"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^18.2.0",
+    "@angular/build": "^18.2.13",
     "@angular/cdk": "^17.0.0",
     "@angular/common": "^18.2.0",
     "@angular/compiler": "^18.2.0",
@@ -35,7 +36,7 @@
     "zone.js": "~0.14.10"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^18.2.12",
+    "@angular-devkit/build-angular": "^18.2.13",
     "@angular/cli": "^18.2.12",
     "@angular/compiler-cli": "^18.2.0",
     "@types/express": "^4.17.17",
