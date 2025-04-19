@@ -29,7 +29,7 @@ export const routes: Routes = [
     },
 
     {
-        path: 'about',
+        path: 'aboutus',
         title: 'About Us',
         loadComponent: () => import('./components/about/about.component').then(a=>a.AboutComponent)
     },
