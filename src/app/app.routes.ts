@@ -19,13 +19,13 @@ export const routes: Routes = [
     },
 
     {
-        path: 'about',
-        title: 'About Us',
+        path: 'aboutus',
+        title: 'BizFusion | About Us',
         loadComponent: () => import('./components/about/about.component').then(a=>a.AboutComponent)
     },
     {
         path: 'services',
-        title: 'Our Services',
+        title: 'BizFusion | Services',
         loadComponent: () => import('./components/services/services.component').then(s=>s.ServicesComponent)
     },
     {
