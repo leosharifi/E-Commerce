@@ -51,42 +51,25 @@ input {
 .container {
   display: flex;
   min-height: 100vh;
-  gap: 30px;
+
   // LEFT SECTION
   .left-section {
     flex: 1;
     // Fixed gradient background (not using theme variables)
     background: radial-gradient(circle at 20% 20%, #0c0c4f, #0d0d2b 50%, #0c0c27 90%);
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 4rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
     max-width: 500px;
 
     .marketing-text {
       h1 {
+        color: #fff;
         font-size: 2rem;
-        font-family: "Dancing Script", cursive;
-        font-optical-sizing: auto;
-        font-weight: 700;
-        font-style: italic;
-        color: blue;
-        margin-bottom: 2em;
-        max-width: 350px;
-        line-height: 20px;
-        cursor: pointer;
-      }
-      h2 {
-        font-style: italic;
-        height: 100%;
-        font-size: 25px;
-        // line-height: 25px;
-        font-family: "Noto Serif", serif;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-variation-settings:
-         "wdth" 100;
-         color: white;
+        max-width: 450px;
+        line-height: 1.4;
+        font-weight: 600;
       }
     }
   }
@@ -97,18 +80,13 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
 
     .form-container {
       max-width: 500px;
       width: 100%;
-      padding: 40px;
-      border-radius: 10px;
       display: flex;
       flex-direction: column;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      background-color: #fff;
-
-
 
       h2 {
         margin-bottom: 1.5rem;
@@ -134,11 +112,18 @@ input {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
 
         img {
           height: 1.7rem;
           width: auto;
+        }
+
+        // For GitHub & Apple buttons, invert their icons based on theme
+        &.github-btn,
+        &.apple-btn {
+          img {
+            filter: invert($invertBtn);
+          }
         }
       }
 
@@ -227,45 +212,27 @@ input {
 // MEDIA QUERIES: RESPONSIVE ADJUSTMENTS
 // =====================================================
 
-// @media all and (max-width: 800px) {
-//   html {
-//     font-size: 18px;
-//   }
-//   .container {
-//     .left-section {
-//       display: none;
-//     }
-//   }
-// }
-
-// @media all and (max-width: 400px) {
-//   html {
-//     font-size: 16px;
-//   }
-//   .container {
-//     .right-section {
-//       padding: 1rem;
-//     }
-//   }
-// }
- /* Responsive */
- @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
+@media all and (max-width: 800px) {
+  html {
+    font-size: 18px;
   }
-
-  .left-section {
-    padding: 40px 20px;
-    text-align: center;
-    align-items: center;
-    h2 {
-      max-width: 100%;
+  .container {
+    .left-section {
+      display: none;
     }
   }
-
- 
 }
 
+@media all and (max-width: 400px) {
+  html {
+    font-size: 16px;
+  }
+  .container {
+    .right-section {
+      padding: 1rem;
+    }
+  }
+}
 
 // =====================================================
 // DARK MODE OVERRIDES
