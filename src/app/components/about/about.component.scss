@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+   
+}
+.aboutcontainerpage {
+    display: flex;
+   //ustify-content: center;
+    height: 900rem;
+    object-fit: cover;
+    background: green;
+    color: white;
+    padding: 0 10em;
+}
+.home {
+    padding-top: 5rem;
+    margin: 0;
+    height: 100vh;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    
+    h1 {
+        display: flex;
+        flex-direction: column;
+        font-size: 6em;
+        margin: 0;
+        line-height: 80px;
+    
+    }
+    p {
+        max-width: 35em;
+        font-size: 20px;
+        padding-top: 3em
+    }
+    div {
+        display: flex;
+        flex-direction: row;
+        gap: 10em;
+        background-color: #6e6c6c;
+        color: #fff;
+        opacity: 0.5;
+        border: 1px solid back;
+        width: 200px;
+        height: 100px;
+    }
+   
+}
