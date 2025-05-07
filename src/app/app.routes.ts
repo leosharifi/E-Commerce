@@ -9,8 +9,18 @@ export const routes: Routes = [
     },
     {
         path: 'home',
-        title: 'home page',
+        title: 'BizFushion',
         loadComponent: () => import('./components/home/home.component').then(h=>h.HomeComponent)
+    },
+    {
+        path: 'signup',
+        title: 'BizFushion | Sign Up',
+        loadComponent: () => import('./components/sign-up/sign-up.component').then(s=>s.SignUpComponent)
+    },
+    {
+        path: 'login',
+        title: 'BizFushion | Log In',
+        loadComponent: () => import('./components/login/login.component').then(l=>l.LoginComponent)
     },
     {
         path: 'admin',
@@ -19,13 +29,13 @@ export const routes: Routes = [
     },
 
     {
-        path: 'about',
-        title: 'About Us',
+        path: 'aboutus',
+        title: 'BizFusion | About Us',
         loadComponent: () => import('./components/about/about.component').then(a=>a.AboutComponent)
     },
     {
         path: 'services',
-        title: 'Our Services',
+        title: 'BizFusion | Services',
         loadComponent: () => import('./components/services/services.component').then(s=>s.ServicesComponent)
     },
     {
