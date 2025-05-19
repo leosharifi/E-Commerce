@@ -8,7 +8,7 @@
    //ustify-content: center;
     height: 900rem;
     object-fit: cover;
-    background: green;
+    background-color: rgba(0, 255, 0, 0.5);
     color: white;
     padding: 0 10em;
 }
@@ -31,18 +31,49 @@
     p {
         max-width: 35em;
         font-size: 20px;
-        padding-top: 3em
+        padding-top: 1em
     }
-    div {
+    div.divcoantainer {
         display: flex;
         flex-direction: row;
-        gap: 10em;
-        background-color: #6e6c6c;
-        color: #fff;
-        opacity: 0.5;
-        border: 1px solid back;
-        width: 200px;
-        height: 100px;
+        gap: 4em;
+        padding-top: 4rem;
+        div.divcontent {
+            background-color: rgba(0, 255, 0, 0.5);
+            color: #fff;
+            // opacity: 0.5;
+            border: 1px solid back;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 2rem;
+            
+            
+            .iconAndTitle {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                gap: 1rem;
+                font-weight: 500;
+                font-size: 18px;
+                .icon {
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid black;
+                    border-radius: 5px;
+                    
+
+                }
+            }
+            p {
+                padding-left: 2.4rem;
+                font-size: 15px;
+                margin: 0;
+                margin-bottom: 2px;
+            }
+           
+        }
     }
    
 }
