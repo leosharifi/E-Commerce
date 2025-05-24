@@ -31,7 +31,6 @@ export const routes: Routes = [
     {
         path: 'aboutus',
         title: 'About Us',
-        title: 'BizFusion | About Us',
 
         loadComponent: () => import('./components/about/about.component').then(a=>a.AboutComponent)
     },

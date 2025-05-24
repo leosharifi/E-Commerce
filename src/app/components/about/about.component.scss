@@ -82,12 +82,10 @@
    //TheNeWthing that need update
     .aboutBizFusionContent {
         display: flex ;
-        justify-content: center;
-        align-items: center;
         flex-direction: row;
         gap: 1rem;
         padding: 10px;
-        padding-top: 2em;
+        padding-top: 4em;
         background-color: white;
         height: 400px;
         border-radius: 10px;
@@ -97,24 +95,43 @@
             // height: 300px;
             // border: 1px solid black;
             // border-radius: 5px;
+            // border: 1px solid green;
             img {
                 width: 80%;
-                padding-left: 10px;
+                // padding-left: 10px;
+                height: 360px;
+                object-fit: cover;
                 border-radius: 10px;
             }
         }
         .aboutFreelancerInfo {
             width: 50%;
             // height: 300px;
-            // border: 1px solid black;
             // border-radius: 5px;
             padding: 0 10px;
+            // border: 1px solid green;
+            // height: 900px;
 
-            h3 {
-                color: #4caf50;
-                font-size: 20px;
+            section.contentPart {
+                border-bottom: 1px solid black;
+                padding-bottom: 4em;
 
+                h3 {
+                    color: #4caf50;
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+                h2 {
+                    font-size: 2em;
+                    margin: 5px 0;
+                }
+                p {
+                    font-size: 0.8em;
+                    color: gray; 
+                    font-weight: 500;
+                }
             }
+            
             
         }
 }
